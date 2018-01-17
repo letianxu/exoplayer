@@ -39,7 +39,7 @@ allprojects {
     }
     if (it.hasProperty('externalBuildDir')) {
         if (!new File(externalBuildDir).isAbsolute()) {
-            externalBuildDir = new File(rootDir, externalBuildDir)
+            externalBuildDir= new File(rootDir, externalBuildDir)
         }
         buildDir = "${externalBuildDir}/${project.name}"
     }
